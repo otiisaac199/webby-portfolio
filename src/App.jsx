@@ -3,8 +3,9 @@ import { useState } from "react";
 import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import About from "./Components/About";
-import MyJourney from "./Components/MyJourney";
+import Education from "./Components/Education";
 import Skill from "./Components/Skill";
+import Contact from "./Components/Contact";
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <MyJourney />
+      <Education />
       <Skill />
+      <Contact />
     </div>
   );
 }
