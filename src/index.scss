@@ -286,7 +286,7 @@
       width: 90%;
       padding: 10px;
       border-radius: 6px;
-      border: 2px solid var(--color2);
+      border: 1px solid var(--color2);
       margin-bottom: 20px;
       cursor: pointer;
       z-index: 2;
@@ -337,10 +337,9 @@
 
     .skill-cont1,
     .skill-cont2 {
-      padding: 15px;
       width: 50%;
-      height: 400px;
-      margin-right: 3rem;
+      min-height: 200px;
+      margin-right: 4rem;
       display: flex;
       flex-direction: column;
 
@@ -348,16 +347,37 @@
         margin-bottom: 10px;
       }
     }
-    .skill-cont1 div,
-    .skill-cont2 div {
+    .skill-cont1 > div,
+    .skill-cont2 > div {
+      position: relative;
+      padding: 10px;
       width: 100%;
       height: 100%;
-      border: 2px solid var(--color2);
+      border: 1px solid var(--color2);
       border-radius: 6px;
+      overflow: hidden;
+      z-index: 1;
+      cursor: pointer;
     }
   }
-}
+  .skill-cont1 > div:hover::before,
+  .skill-cont2 > div:hover::before {
+    width: 100%;
+  }
 
+  .skill-cont1 > div::before,
+  .skill-cont2 > div::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--background-color);
+    z-index: -1;
+    transition: 0.5s;
+  }
+}
 // END OF SKILL CONTAINER
 
 // ANIMATIONS
@@ -432,3 +452,30 @@ h1 {
   }
 }
 // END OF COMPHEADING JSX
+
+// PROGRESS BAR JSX
+.progress-bar-container {
+  margin: 15px 0;
+  .progress-text-cont {
+    display: flex;
+    justify-content: space-between;
+  }
+  .progress-bar-cont {
+    margin: 5px 0;
+    padding: 4px;
+    width: 98%;
+    height: 10px;
+    border: 1px solid var(--color2);
+    border-radius: 4px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: start;
+
+    .progress-bar-content {
+      height: 100%;
+      // margin: 4px;
+      background-color: var(--color2);
+      border-radius: 2px;
+    }
+  }
+}
