@@ -1,13 +1,17 @@
 import { useState } from "react";
-import "./App.css";
+import "./App.scss";
 import Home from "./Components/Home";
+import Navbar from "./Components/Navbar";
+import About from "./Components/About";
+import Education from "./Components/Education";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
+      <Navbar />
       <Home />
+      <About />
+      <Education />
     </div>
   );
 }
