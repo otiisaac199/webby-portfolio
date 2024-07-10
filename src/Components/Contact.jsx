@@ -6,20 +6,37 @@ const Contact = () => {
     <div className="contact-container">
       <CompHeading firstText={"Contact"} secondText={"Me!"} />
       <form className="form">
-        <input type="text" name="fullname" placeholder="Full Name" required />
-        <input type="email" name="email" placeholder="Email Address" required />
-        <input
-          type="number"
-          name="mobilenumber"
-          placeholder="Mobile Number"
-          required
-        />
-        <input
-          type="text"
-          name="emailsubject"
-          placeholder="Email Subject"
-          required
-        />
+        <div className="input">
+          <div>
+            <input
+              type="text"
+              name="fullname"
+              placeholder="Full Name"
+              required
+            />
+            <input
+              type="number"
+              name="mobilenumber"
+              placeholder="Mobile Number"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+            />
+            <input
+              type="text"
+              name="emailsubject"
+              placeholder="Email Subject"
+              required
+            />
+          </div>
+        </div>
+
         <textarea
           placeholder="Your Message"
           style={{
@@ -34,7 +51,7 @@ const Contact = () => {
             borderRadius: "5px",
           }}
         ></textarea>
-        <Button btnTitle={"Submit"} className="form-button" />
+        <Button btnTitle={"Submit"} />
       </form>
     </div>
   );
