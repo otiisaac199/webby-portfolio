@@ -199,7 +199,7 @@
 // ABOUT CONTAINER
 .about-container {
   background-color: var(--background-color2);
-  height: 100vh;
+  // height: 100vh;
   padding: 3rem 10%;
   display: flex;
   flex-direction: column;
@@ -254,7 +254,7 @@
   word-wrap: break-word;
   color: var(--color);
   background-color: var(--background-color);
-  height: 100vh;
+  // height: 100vh;
   padding: 4rem 10%;
   display: flex;
   flex-direction: column;
@@ -328,9 +328,6 @@
   0% {
     transform: rotate(0);
   }
-  // 50% {
-  //   transform: rotate(360deg);
-  // }
   100% {
     transform: rotate(360deg);
   }
