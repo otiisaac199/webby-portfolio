@@ -1,11 +1,14 @@
+import Button from "./ReuseableComp/Button";
+import CompHeading from "./ReuseableComp/CompHeading";
+
 const About = () => {
   return (
     <div className="about-container">
-      <h1>
-        About <span> Me</span>
-      </h1>
+      <CompHeading firstText={"About"} secondText={"Me"} />
       <div className="about-content">
-        <div className="about-logo-cont"></div>
+        <div className="about-logo">
+          <div className="about-logo-content"></div>
+        </div>
         <h3>Frontend Developer</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et felis
@@ -19,9 +22,7 @@ const About = () => {
           lobortis consectetur, felis justo malesuaci luctus et ultrices posuere
           cubilia Curae; Donec sagittis nis
         </p>
-        <div className="button-cont">
-          <a>Read More</a>
-        </div>
+        <Button btnTitle={"Read More"} />
       </div>
     </div>
   );

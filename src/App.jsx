@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "./App.scss";
+// import "./App.scss";
 import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import About from "./Components/About";
-import Education from "./Components/Education";
+import MyJourney from "./Components/MyJourney";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <Education />
+      <MyJourney />
     </div>
   );
 }
