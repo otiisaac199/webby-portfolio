@@ -318,6 +318,44 @@
 
 // SKILL CONTAINER
 .skill-container {
+  padding: var(--padding);
+  color: var(--color);
+  background-color: var(--background-color2);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    margin-bottom: 3.5rem;
+  }
+
+  .skill-cont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .skill-cont1,
+    .skill-cont2 {
+      padding: 15px;
+      width: 50%;
+      height: 400px;
+      margin-right: 3rem;
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        margin-bottom: 10px;
+      }
+    }
+    .skill-cont1 div,
+    .skill-cont2 div {
+      width: 100%;
+      height: 100%;
+      border: 2px solid var(--color2);
+      border-radius: 6px;
+    }
+  }
 }
 
 // END OF SKILL CONTAINER
