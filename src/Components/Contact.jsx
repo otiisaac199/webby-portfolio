@@ -45,6 +45,7 @@ const Contact = () => {
             height: "250px",
             color: "var(--color)",
             border: "1px solid var(--color2)",
+            marginTop: "6px",
             padding: "10px 7px",
             fontFamily: "Quicksand",
             background: "transparent",

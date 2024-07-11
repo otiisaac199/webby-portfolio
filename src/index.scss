@@ -4,7 +4,7 @@
   --background-color: #081b29;
   --background-color2: #112e42;
   --color2: #00abf0;
-  --padding: 1rem 10%;
+  --padding: 3rem 10%;
 }
 
 * {
@@ -61,7 +61,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 100vh;
+  min-height: 37pc;
   width: 100%;
   background: url(assets/images/home.jpg);
   background-size: cover;
@@ -69,7 +69,7 @@
 
   .home-content {
     padding: var(--padding);
-    width: 700px;
+    width: 50pc;
 
     h1 {
       font-size: 3.3rem;
@@ -93,7 +93,7 @@
     }
 
     .button-cont {
-      width: 340px;
+      width: 300px;
       height: 40px;
       margin-top: 2rem;
       display: flex;
@@ -201,7 +201,7 @@
 .about-container {
   background-color: var(--background-color2);
   // height: 100vh;
-  padding: 3rem 10%;
+  padding: var(--padding);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -216,6 +216,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 
     h3 {
       margin: 5px 0 2rem 0;
@@ -256,7 +257,7 @@
   color: var(--color);
   background-color: var(--background-color);
   // height: 100vh;
-  padding: 4rem 10%;
+  padding: var(--padding);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -273,8 +274,8 @@
 
     .edu-cont,
     .exp-cont {
-      width: 50%;
-      margin-right: 10px;
+      min-width: 50%;
+      margin-right: 20px;
 
       .edu-content,
       .exp-content {
@@ -284,7 +285,7 @@
 
     .jbox-cont {
       position: relative;
-      width: 90%;
+      width: 100%;
       padding: 10px;
       border-radius: 6px;
       border: 1px solid var(--color2);
@@ -322,7 +323,7 @@
   padding: var(--padding);
   color: var(--color);
   background-color: var(--background-color2);
-  height: 100vh;
+  // height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -338,9 +339,9 @@
 
     .skill-cont1,
     .skill-cont2 {
-      width: 50%;
+      min-width: 50%;
       min-height: 200px;
-      margin-right: 4rem;
+      margin: 0 20px 3rem 0;
       display: flex;
       flex-direction: column;
 
@@ -353,7 +354,7 @@
       position: relative;
       padding: 10px;
       width: 100%;
-      height: 100%;
+      height: auto;
       border: 1px solid var(--color2);
       border-radius: 6px;
       overflow: hidden;
@@ -383,7 +384,7 @@
 
 // CONTACT CONTAINER
 .contact-container {
-  padding: 4rem 25%;
+  padding: 4rem 23%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -394,7 +395,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 100%;
     .input {
       display: flex;
@@ -440,13 +440,26 @@
     }
 
     #btn {
+      width: 100%;
       display: flex;
       justify-content: center;
     }
   }
 }
-
 // END OF CONTACT CONTAINER
+
+// FOOTER
+.footer {
+  color: var(--color);
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-color2);
+  padding: var(--padding);
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+// END OF FOOTER
 
 // ANIMATIONS
 
@@ -513,7 +526,7 @@
 // COMPHEADING JSX
 h1 {
   color: var(--color);
-  font-size: 3.3rem;
+  font-size: 3.1rem;
   line-height: 4rem;
   span {
     color: var(--color2);
@@ -531,7 +544,7 @@ h1 {
   .progress-bar-cont {
     margin: 5px 0;
     padding: 4px;
-    width: 98%;
+    width: 100%;
     height: 20px;
     border: 1px solid var(--color2);
     border-radius: 4px;
